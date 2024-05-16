@@ -1,7 +1,9 @@
+# 控制LED的亮度
+
 from machine import Pin, PWM  # 导入PWM类，用于操作PWM
 import time  # 导入time模块，用于时间相关的操作
 
-led = PWM(Pin(2), freq=500, duty=0)  # 创建一个PWM对象，设置频率为500Hz，占空比为0
+led = PWM(Pin(32), freq=500, duty=0)  # 创建一个PWM对象，设置频率为500Hz，占空比为0
 
 while True:  # 无限循环
     for i in range(1024):  # 从0递增到1023
